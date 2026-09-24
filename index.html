@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="sr-Latn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Sleepy pet — Kreveti i dušeci za pse</title>
+<meta name="description" content="Sleepy kreveti i dušeci za pse: 100% pamuk, navlake perive na 60–90 °C, podesiva količina punjenja. Pravljeno po porudžbini u Srbiji.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Kaushan+Script&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red:#d43434; --red-dk:#b12628; --tan:#c99a7c; --tan-dk:#a8765a; --tan-soft:#f4e9e1; --cream:#fbf8f5;
+  --ink:#1c1616; --muted:#6f6461; --line:#ebe2dc;
+  --vanilla:#f7f3e6; --choco:#a88474; --black:#141414; --stone:#a3a3a3; --lgrey:#e4e7ee;
+  --radius:18px; --shadow:0 14px 36px -18px rgba(60,30,20,.35);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"DM Sans",system-ui,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1220px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:"Instrument Serif",Georgia,serif;font-weight:400;line-height:1.02;letter-spacing:-.01em}
+h1 em,h2 em{color:var(--red)}
+.sig{font-family:"Kaushan Script",cursive;color:var(--red)}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--tan-dk)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;padding:15px 28px;border-radius:999px;font-weight:700;font-size:15px;border:1.5px solid var(--ink);transition:transform .15s,background .15s,color .15s,border-color .15s;cursor:pointer}
+.btn-red{background:var(--red);border-color:var(--red);color:#fff}
+.btn-red:hover{background:var(--red-dk);border-color:var(--red-dk);transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:#fff}
+
+.announce{background:var(--ink);color:#f3e6dd;font-size:13px;font-weight:500;text-align:center;padding:9px 16px}
+.announce b{color:#fff}
+
+header.site{position:sticky;top:0;z-index:50;background:rgba(251,248,245,.93);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;height:72px;gap:24px}
+.logo{display:flex;align-items:center;gap:10px}
+.logo img{width:46px;height:46px;border-radius:50%;border:1px solid var(--line);background:#fff}
+.logo .sig{font-size:26px;line-height:1}
+nav.main{display:flex;gap:28px;font-weight:500;font-size:15px}
+nav.main a{position:relative;padding:4px 0}
+nav.main a::after{content:"";position:absolute;left:0;bottom:-2px;height:1.5px;width:0;background:var(--red);transition:width .2s}
+nav.main a:hover::after{width:100%}
+.icons{display:flex;gap:12px;align-items:center}
+.icon-btn{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--line);background:#fff;position:relative}
+.icon-btn svg{width:19px;height:19px;stroke:var(--ink);fill:none;stroke-width:1.8}
+.badge{position:absolute;top:-4px;right:-4px;background:var(--red);color:#fff;font-size:11px;font-weight:700;min-width:19px;height:19px;border-radius:10px;display:grid;place-items:center}
+.menu-btn{display:none}
+
+/* hero */
+.hero{padding:56px 0 80px}
+.hero .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.hero h1{font-size:clamp(50px,6.6vw,92px);margin:16px 0 22px}
+.hero .lead{font-size:18px;color:var(--muted);max-width:38ch;margin-bottom:32px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.stats{display:flex;gap:28px;margin-top:44px;flex-wrap:wrap}
+.stats b{display:block;font-family:"Instrument Serif",serif;font-size:36px;font-weight:400;line-height:1.1}
+.stats small{color:var(--muted);font-size:13px}
+.hero-art{position:relative}
+.hero-art .main{border-radius:200px 200px var(--radius) var(--radius);overflow:hidden;aspect-ratio:4/5;box-shadow:var(--shadow)}
+.hero-art .main img{width:100%;height:100%;object-fit:cover}
+.hero-art .note{position:absolute;left:-28px;bottom:36px;background:#fff;border-radius:16px;padding:16px 18px;box-shadow:var(--shadow);max-width:250px;font-size:14px}
+.hero-art .note b{display:block;font-family:"Instrument Serif",serif;font-weight:400;font-size:22px;line-height:1.1;margin-bottom:4px}
+.hero-art .note span{color:var(--muted)}
+.hero-art .stamp{position:absolute;top:22px;right:-14px;width:112px;height:112px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;text-align:center;font-family:"Kaushan Script",cursive;font-size:17px;line-height:1.15;transform:rotate(10deg);box-shadow:var(--shadow)}
+
+/* no-more strip */
+.nomore{background:#fff;border-block:1px solid var(--line);padding:64px 0}
+.nomore h2{font-size:clamp(34px,4vw,50px);text-align:center;margin-bottom:36px}
+.nomore ul{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.nomore li{display:flex;gap:14px;align-items:flex-start;padding:18px 20px;border-radius:14px;background:var(--cream);border:1px solid var(--line);font-size:15px}
+.nomore li::before{content:"✕";flex:0 0 28px;height:28px;border-radius:50%;background:var(--tan-soft);color:var(--red);display:grid;place-items:center;font-size:13px;font-weight:700}
+
+section.block{padding:96px 0}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:44px;flex-wrap:wrap}
+.sec-head h2{font-size:clamp(38px,4.6vw,60px);margin-top:10px}
+.sec-head p{color:var(--muted);max-width:44ch}
+
+/* products */
+.grid-products{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.card{background:#fff;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);transition:transform .2s,box-shadow .2s;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.card .media{position:relative;aspect-ratio:4/5;overflow:hidden;background:var(--tan-soft)}
+.card .media img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.card:hover .media img{transform:scale(1.05)}
+.tag{position:absolute;top:14px;left:14px;background:var(--red);color:#fff;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:6px 11px;border-radius:999px}
+.tag.dark{background:var(--ink)}
+.card .body{padding:18px 20px 22px;display:flex;flex-direction:column;gap:6px;flex:1}
+.card h3{font-size:30px}
+.card .desc{color:var(--muted);font-size:14px;flex:1}
+.card .row{display:flex;justify-content:space-between;align-items:center;margin-top:10px}
+.price{font-weight:700;font-size:17px}
+.price small{font-weight:400;color:var(--muted);font-size:12px;margin-right:4px}
+.more{font-size:13px;font-weight:700;color:var(--red)}
+
+/* filling feature */
+.feature{background:var(--tan-soft);border-radius:36px;margin:0 24px}
+.feature .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;padding-block:88px}
+.feature h2{font-size:clamp(40px,5vw,66px);margin:12px 0 18px}
+.feature p{color:#4d4240;font-size:17px;max-width:46ch}
+.seasons{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:30px 0 34px}
+.season{background:#fff;border-radius:16px;padding:18px}
+.season .ic{font-size:26px}
+.season b{display:block;margin:6px 0 2px}
+.season small{color:var(--muted);font-size:14px}
+.feature-art{display:grid;grid-template-columns:1.2fr 1fr;gap:16px;align-items:end}
+.feature-art img{border-radius:22px;width:100%;object-fit:cover;box-shadow:var(--shadow)}
+.feature-art img:first-child{aspect-ratio:3/4}
+.feature-art img:last-child{aspect-ratio:1}
+
+/* colours */
+.colours .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:64px;align-items:center}
+.palette{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin:30px 0}
+.pill{text-align:center;font-size:13px}
+.pill i{display:block;height:170px;border-radius:999px;border:1px solid var(--line);margin-bottom:10px;transition:transform .2s}
+.pill:hover i{transform:translateY(-6px)}
+.pill b{display:block;font-weight:700}
+.pill span{color:var(--muted);font-size:12px}
+.combo{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.combo figure{border-radius:22px;overflow:hidden;position:relative;aspect-ratio:4/5}
+.combo img{width:100%;height:100%;object-fit:cover}
+.combo figcaption{position:absolute;left:12px;bottom:12px;background:rgba(255,255,255,.93);font-size:12px;font-weight:700;padding:6px 11px;border-radius:999px}
+.combo figure:nth-child(2){margin-top:48px}
+
+/* materials */
+.materials{background:#fff;border-block:1px solid var(--line)}
+.mat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.mat{border:1px solid var(--line);border-radius:var(--radius);padding:26px 22px;background:var(--cream);position:relative}
+.mat::before{content:"";position:absolute;top:18px;right:18px;width:14px;height:14px;border-radius:50%;border:1.5px solid var(--tan)}
+.mat .big{font-family:"Instrument Serif",serif;font-size:44px;line-height:1;color:var(--tan-dk)}
+.mat b{display:block;margin:12px 0 6px}
+.mat p{font-size:14px;color:var(--muted)}
+
+/* sizes */
+.size-wrap{display:grid;grid-template-columns:1fr 1.3fr;gap:56px;align-items:center}
+.size-wrap img{border-radius:var(--radius);box-shadow:var(--shadow);aspect-ratio:1;object-fit:cover;width:100%}
+table{width:100%;border-collapse:collapse;font-size:15px;background:#fff;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line)}
+th,td{text-align:left;padding:14px 16px;border-bottom:1px solid var(--line)}
+th{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--tan-dk);background:var(--tan-soft)}
+td b{font-family:"Instrument Serif",serif;font-weight:400;font-size:24px}
+tr:last-child td{border-bottom:0}
+.hint{margin-top:16px;font-size:14px;color:var(--muted)}
+
+/* story */
+.story{background:var(--ink);color:#efe4dc;padding:110px 0;text-align:center}
+.story blockquote{font-family:"Instrument Serif",serif;font-size:clamp(34px,4.6vw,60px);line-height:1.1;max-width:20ch;margin:18px auto 26px;color:#fff}
+.story blockquote em{color:var(--tan)}
+.story p{max-width:58ch;margin:0 auto;opacity:.82;font-size:17px}
+.story .sig{display:block;font-size:34px;margin-top:28px}
+.story .eyebrow{color:var(--tan)}
+
+/* reviews */
+.reviews{columns:3;column-gap:20px}
+.review{break-inside:avoid;background:#fff;border:1px solid var(--line);border-radius:22px 22px 22px 6px;padding:24px 24px 20px;margin-bottom:20px}
+.review .q{font-size:16px;line-height:1.55}
+.review .meta{display:flex;align-items:center;gap:8px;margin-top:14px;font-size:13px;color:var(--muted)}
+.review .meta::before{content:"💌"}
+.src-note{font-size:13px;color:var(--muted);margin-top:8px}
+
+/* pet friendly */
+.pf{display:grid;grid-template-columns:1fr 1fr;border-radius:36px;overflow:hidden;background:#fff;border:1px solid var(--line)}
+.pf{align-items:center}
+.pf img{width:100%;aspect-ratio:5/4;object-fit:cover}
+.pf .txt{padding:56px}
+.pf h2{font-size:clamp(34px,3.8vw,50px);margin:10px 0 16px}
+.pf p{color:var(--muted);margin-bottom:24px}
+
+/* faq */
+.faq{max-width:820px;margin:0 auto}
+details{border-bottom:1px solid var(--line);padding:22px 0}
+summary{cursor:pointer;list-style:none;font-family:"Instrument Serif",serif;font-size:25px;display:flex;justify-content:space-between;gap:18px;line-height:1.2}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-family:"DM Sans";font-size:24px;color:var(--red);transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{color:var(--muted);margin-top:12px;max-width:64ch}
+
+/* reserve */
+.reserve{background:var(--red);color:#fff;border-radius:36px;padding:64px;display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:center}
+.reserve h2{font-size:clamp(36px,4.2vw,56px)}
+.reserve p{opacity:.9;margin-top:12px;max-width:44ch}
+.reserve .btn{background:#fff;color:var(--red);border-color:#fff;justify-self:end}
+.reserve .btn:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+
+footer{background:var(--ink);color:#cbbdb5;padding:72px 0 28px;margin-top:96px}
+footer .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;margin-bottom:56px}
+footer h4{color:#fff;font-family:"Instrument Serif",serif;font-size:22px;font-weight:400;margin-bottom:12px}
+footer li{list-style:none;margin:8px 0;font-size:14px}
+footer li a:hover{color:#fff}
+footer .legal{border-top:1px solid rgba(255,255,255,.1);padding-top:22px;display:flex;justify-content:space-between;font-size:13px;opacity:.6;flex-wrap:wrap;gap:12px}
+
+@media (max-width:1024px){
+  .grid-products,.mat-grid{grid-template-columns:repeat(2,1fr)}
+  .nomore ul{grid-template-columns:repeat(2,1fr)}
+  .reviews{columns:2}
+  footer .cols{grid-template-columns:1fr 1fr}
+}
+@media (max-width:820px){
+  nav.main{display:none}
+  .menu-btn{display:grid}
+  .hero .wrap,.feature .wrap,.colours .wrap,.size-wrap,.pf,.reserve{grid-template-columns:1fr}
+  .hero{padding-top:28px}
+  .hero-art{max-width:440px;margin:0 auto;width:100%}
+  .hero-art .note{left:12px}
+  .hero-art .stamp{right:6px}
+  .feature{margin:0 12px}
+  .feature .wrap{padding-block:56px;gap:40px}
+  section.block{padding:64px 0}
+  .pf .txt{padding:36px 26px}
+  .pf img{aspect-ratio:4/3}
+  .reserve{padding:40px 26px}
+  .reserve .btn{justify-self:start}
+}
+@media (max-width:560px){
+  .wrap{padding:0 16px}
+  .grid-products,.mat-grid,.nomore ul{grid-template-columns:1fr}
+  .reviews{columns:1}
+  .palette{gap:8px}
+  .pill i{height:120px}
+  .pill span{display:none}
+  .seasons{grid-template-columns:1fr}
+  .stats{gap:24px}
+  th,td{padding:11px 10px;font-size:13px}
+  footer .cols{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<div class="announce">Rezervacije za izradu su otvorene · broj porudžbina je ograničen · <b>poštarina gratis</b> preko 20.000 RSD uz uplatu na račun</div>
+
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="index.html"><img src="img/logo.jpg" alt="Sleepy pet logo"><span class="sig">Sleepy pet</span></a>
+    <nav class="main" aria-label="Glavna navigacija">
+      <a href="sleepy-krevet.html">Kreveti</a>
+      <a href="#kolekcija">Dušeci</a>
+      <a href="#kolekcija">Dodaci</a>
+      <a href="#boje">Boje</a>
+      <a href="#velicine">Veličine</a>
+      <a href="#utisci">Utisci</a>
+    </nav>
+    <div class="icons">
+      <a class="icon-btn" href="#" aria-label="Pretraga"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></a>
+      <a class="icon-btn" href="#" aria-label="Korpa"><svg viewBox="0 0 24 24"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="badge">0</span></a>
+      <button class="icon-btn menu-btn" aria-label="Meni"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Kreveti i dušeci za pse</span>
+      <h1>Sleepy nije samo <em>običan</em> krevetić za psa.</h1>
+      <p class="lead">Čvrst, stabilan, lak za održavanje, i u njemu pas stvarno želi da spava. Pamučna navlaka se skida za čas i pere na 60–90 °C, kao tvoja posteljina.</p>
+      <div class="ctas">
+        <a class="btn btn-red" href="sleepy-krevet.html">Izaberi svoj Sleepy →</a>
+        <a class="btn btn-ghost" href="#velicine">Koja veličina mi treba?</a>
+      </div>
+      <div class="stats">
+        <div><b>10.000+</b><small>pasa i vlasnika u Sleepy zajednici</small></div>
+        <div><b>60–90 °C</b><small>pranje pamučne navlake</small></div>
+        <div><b>14 dana</b><small>za povraćaj ili zamenu veličine</small></div>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="main"><img src="img/DcbrHSziu27.jpg" alt="Ridžbek sa žutom igračkom u braon Sleepy krevetu"></div>
+      <div class="stamp">trajna<br>investicija</div>
+      <div class="note"><b>Podesiva količina punjenja</b><span>Izvadi punjenje za leto, vrati ga za zimu. Uvek pufnasto i kao novo.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="nomore">
+  <div class="wrap">
+    <h2>Uz Sleepy, <em>nema više…</em></h2>
+    <ul>
+      <li>dlaka koje ne možeš da skineš sa krevetića</li>
+      <li>muke oko pranja i sušenja</li>
+      <li>bojazni od alergena, bakterija i drugih mikroorganizama</li>
+      <li>fleka ni neprijatnih mirisa</li>
+      <li>straha da će vremenom da ulegne ili se deformiše</li>
+      <li>problema ni ako se tvoj pas upiški ili ošteti neki deo kreveta</li>
+    </ul>
+  </div>
+</section>
+
+<section class="block" id="kolekcija">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow">Modeli</span><h2>Koji model <em>ti biraš?</em></h2></div>
+      <p>Krevet i dušek su dva različita ležaja i svaki stiže kao celina. Dodatne navlake i delove možeš da dokupiš uz krevetić ili bilo kad kasnije.</p>
+    </div>
+    <div class="grid-products">
+      <a class="card" href="sleepy-krevet.html">
+        <div class="media"><span class="tag">Premium</span><img src="img/DaQwFuDCmvb.jpg" alt="Premium Sleepy krevet u crnoj i braon boji"></div>
+        <div class="body"><h3>Premium krevet</h3><p class="desc">Atraktivan dizajn. Za ljubimca koji voli mekoću i ušuškanost. Veličine S, M i L.</p>
+          <div class="row"><span class="price"><small>od</small>7.500 RSD</span><span class="more">Pogledaj →</span></div></div>
+      </a>
+      <a class="card" href="sleepy-krevet.html">
+        <div class="media"><span class="tag dark">Basic</span><img src="img/DbFVK1oquiB.jpg" alt="Basic Sleepy krevet u tamno sivoj boji"></div>
+        <div class="body"><h3>Basic krevet</h3><p class="desc">Svedeni dizajn. Za ljubimca koji uživa u svim pozama za spavanje. Veličine XS, S, M i L.</p>
+          <div class="row"><span class="price"><small>od</small>6.000 RSD</span><span class="more">Pogledaj →</span></div></div>
+      </a>
+      <a class="card" href="#">
+        <div class="media"><span class="tag">Po meri</span><img src="img/DbApY9RqKWj.jpg" alt="Pas leži na Sleepy dušeku"></div>
+        <div class="body"><h3>Sleepy dušek</h3><p class="desc">Jednostavan i po meri. Nema stranice, ne zauzima više prostora nego što treba, a dimenzije možeš da prilagodiš.</p>
+          <div class="row"><span class="price"><small>od</small>5.000 RSD</span><span class="more">Pogledaj →</span></div></div>
+      </a>
+      <a class="card" href="#dodaci">
+        <div class="media"><img src="img/DaP1QUSinLE.jpg" alt="Sleepy dušek i navlaka sa rajsferšlusom"></div>
+        <div class="body"><h3>Dodaci</h3><p class="desc">Dodatne navlake, nepromočivi dodatak, dekorativni jastučići i rezervni delovi kreveta.</p>
+          <div class="row"><span class="price"><small>od</small>250 RSD</span><span class="more">Pogledaj →</span></div></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="feature">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Podesiva količina punjenja</span>
+      <h2>Udobnost po meri <em>tvog psa.</em></h2>
+      <p>Nije svaki pas isti: nekom treba mekše, velikom i teškom psu više punjenja da se ne žulja o pod. Zato punjenje sama podešavaš, pa krevetić uvek prati potrebe tvog ljubimca, bez obzira na veličinu, težinu, zdravlje ili godine.</p>
+      <div class="seasons">
+        <div class="season"><span class="ic">☀️</span><b>Leti</b><small>Izvadi deo punjenja i krevetić postaje tanja, laganija letnja prostirka.</small></div>
+        <div class="season"><span class="ic">❄️</span><b>Zimi</b><small>Vrati punjenje: ušuškano, toplo i dovoljno odignuto od poda.</small></div>
+      </div>
+      <a class="btn btn-red" href="sleepy-krevet.html">Pogledaj krevet →</a>
+    </div>
+    <div class="feature-art">
+      <img src="img/Db_UE-cipKk.jpg" alt="Bul terijer na sivom Sleepy krevetu">
+      <img src="img/DaNkOovCmpP.jpg" alt="Crni pas na krem Sleepy krevetu">
+    </div>
+  </div>
+</section>
+
+<section class="block colours" id="boje">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Sleepy paleta boja</span>
+      <h2 style="font-size:clamp(38px,4.6vw,60px);margin-top:10px">Iskombinuj po <em>svojoj želji.</em></h2>
+      <p style="color:var(--muted);margin-top:14px;max-width:46ch">Pet boja koje možeš da kombinuješ kako bi se krevetić uklopio u boje tvog enterijera i išao sjajno uz tvog ljubimca. Zajedno ćemo iskombinovati boje pri poručivanju.</p>
+      <div class="palette">
+        <div class="pill"><i style="background:var(--vanilla)"></i><b>Vanilla ice</b><span>krem</span></div>
+        <div class="pill"><i style="background:var(--choco)"></i><b>Choco</b><span>braon</span></div>
+        <div class="pill"><i style="background:var(--black)"></i><b>Black</b><span>crna</span></div>
+        <div class="pill"><i style="background:var(--stone)"></i><b>Stone</b><span>tamno siva</span></div>
+        <div class="pill"><i style="background:var(--lgrey)"></i><b>Light grey</b><span>svetlo siva</span></div>
+      </div>
+      <p style="font-size:13px;color:var(--muted)">Boje na fotografijama mogu malo da variraju u odnosu na boje uživo, u zavisnosti od svetla i ekrana.</p>
+    </div>
+    <div class="combo">
+      <figure><img src="img/Dcjas9BgvWb.jpg" alt="Bernski planinski pas na crno-braon krevetu"><figcaption>Black + Choco</figcaption></figure>
+      <figure><img src="img/DcquyS4ijra.jpg" alt="Francuski buldog u svetlo sivom krevetu"><figcaption>Light grey</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="block materials" id="materijali">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow">Materijali</span><h2>Mala tajna je <em>u materijalima.</em></h2></div>
+      <p>Kao što je važno u kakvoj posteljini ti spavaš, tako je i za psa važno da to budu prirodni materijali.</p>
+    </div>
+    <div class="mat-grid">
+      <div class="mat"><div class="big">100%</div><b>Prirodni pamuk</b><p>Izuzetne gustine tkanja, prijatan i prozračan, a dlake se ne zabadaju u tkaninu.</p></div>
+      <div class="mat"><div class="big">60–90°</div><b>Pranje navlake</b><p>Visoka temperatura uništava bakterije, grinje i alergene, pa krevetić iznova miriše sveže.</p></div>
+      <div class="mat"><div class="big">~</div><b>Češljano silikonsko vlakno</b><p>Hipoalergeno punjenje, bezbedno i za decu i ukućane osetljive na alergije.</p></div>
+      <div class="mat"><div class="big">40°</div><b>Perivi segmenti</b><p>Napunjeni deo je podeljen na segmente koji staju u veš mašinu, a punilo je u delimično nepropusnoj jastučnici.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="velicine">
+  <div class="wrap size-wrap">
+    <img src="img/DaV63AfCjvQ.jpg" alt="Dva velika psa zajedno u Sleepy L krevetu">
+    <div>
+      <span class="eyebrow">Veličine</span>
+      <h2 style="font-size:clamp(38px,4.6vw,60px);margin:10px 0 24px">Veći od <em>standardnih.</em></h2>
+      <table>
+        <thead><tr><th>Veličina</th><th>Unutrašnje</th><th>Ukupne</th><th>Modeli</th></tr></thead>
+        <tbody>
+          <tr><td><b>XS</b></td><td>50×40 cm</td><td>65×50 cm</td><td>basic</td></tr>
+          <tr><td><b>S</b></td><td>65×50 cm</td><td>90×70 cm</td><td>basic, premium</td></tr>
+          <tr><td><b>M</b></td><td>85×60 cm</td><td>110×90 cm</td><td>basic, premium</td></tr>
+          <tr><td><b>L</b></td><td>100×65 cm</td><td>130×95 cm</td><td>basic, premium</td></tr>
+        </tbody>
+      </table>
+      <p class="hint">Sleepy kreveti su veći i glomazniji od standardnih, pa je moguće da tvom psu odgovara manji krevet nego što ti se čini na fotografiji. L je sasvim komotan i za najveće pse, ili za dva ljubimca koji spavaju zajedno. Pošalji nam rasu i težinu, pa ćemo zajedno izabrati.</p>
+    </div>
+  </div>
+</section>
+
+<section class="story">
+  <div class="wrap">
+    <span class="eyebrow">Zašto Sleepy?</span>
+    <blockquote>Sve to ni ja nisam želela. <em>Zato sam napravila Sleepy.</em></blockquote>
+    <p>Krevetić koji se ne ulegne pod težinom velikog nežnog džina, koji znaš kako da opereš, sa kog pas ne beži leti jer mu je vruće. Nepromočivi dodatak nastao je kad je naša stara kuca počela da ima problem sa inkontinencijom, a dušek je Dona godinama koristila u našoj kući. Svaki detalj dolazi iz života sa psom.</p>
+    <span class="sig">Sleepy pet</span>
+  </div>
+</section>
+
+<section class="block" id="utisci">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow">Vaši utisci</span><h2>Stalno neko <em>hrče.</em></h2></div>
+      <p>Poruke koje su nam vlasnici poslali, iz naših Instagram priča „utisci“.</p>
+    </div>
+    <div class="reviews">
+      <div class="review"><p class="q">„Imamo 3 Sleepy kreveta. Stalno neko hrče jer od kad u njima spavaju utonu u duboki san.“</p><div class="meta">Iz poruka vlasnika · krevet</div></div>
+      <div class="review"><p class="q">„4 godine kako imamo krevet, preživljava svakodnevno kopanje, jer moj pas mora prvo da kopa pa da legne, dlake se ne lepe, ne zabadaju, redovno pranje navlake u mašini, … i dalje je kao nov.“</p><div class="meta">Iz poruka vlasnika · krevet</div></div>
+      <div class="review"><p class="q">„Samo da Vam javim da od kada mala spava na Vašem dušeku da ujutru duže spava. :) Mnoooooogo joj je udobnije i baš uživa.“</p><div class="meta">Iz poruka vlasnika · dušek</div></div>
+      <div class="review"><p class="q">„Toliko mi je dobar vaš krevetić da bih poručila još. … Imam ga već 4 meseca možda i više i kao nov je. Navlake perem na 90 stepeni i one su kao nove.“</p><div class="meta">Iz poruka vlasnika · krevet</div></div>
+      <div class="review"><p class="q">„Imamo krevet u dnevnom boravku i dušek u spavaćoj i zamenske navlake. Prezadovoljni smo ❤️“</p><div class="meta">Iz poruka vlasnika · krevet i dušek</div></div>
+      <div class="review"><p class="q">„Stigao je krevetić… udobniji je od mog kreveta definitivno 😊 Svaka čast, stvarno smo oduševljeni.“</p><div class="meta">Iz poruka vlasnika · krevet</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" style="padding-top:0">
+  <div class="wrap">
+    <div class="pf">
+      <img src="img/DcdKMGZCpNQ.jpg" alt="Psi u Sleepy krevetima u planinskoj kolibi">
+      <div class="txt">
+        <span class="eyebrow">Pansioni · pet friendly smeštaj</span>
+        <h2>Dočekaj ih kao <em>prave goste.</em></h2>
+        <p>Sleepy se koristi u pet friendly apartmanima, pansionima za pse i privremenim smeštajima, svuda gde dolazi i odlazi mnogo pasa. Navlaka se skine za čas, opere na 60–90 °C, i sve je opet čisto, mirišljavo i spremno za novog gosta.</p>
+        <a class="btn btn-ghost" href="https://www.instagram.com/sleepy.krevetizapse/" target="_blank" rel="noopener">Piši nam za veće porudžbine</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" style="padding-top:0" id="pitanja">
+  <div class="wrap">
+    <div class="sec-head" style="justify-content:center;text-align:center"><div><span class="eyebrow">Pitanja</span><h2>Česta pitanja</h2></div></div>
+    <div class="faq">
+      <details open><summary>Koja je razlika između premium i basic modela?</summary><p>Premium ima atraktivniji, ušuškaniji dizajn, a basic je svedeniji. Ono što je potpuno isto kod oba modela je jastuk na kom leži pas, jer bez obzira na to koji model odabereš, psu mora da bude jednako udobno i prijatno.</p></details>
+      <details><summary>Da li se navlaka skida sa celog kreveta?</summary><p>Da. Navlaka se skida sa kompletnog kreveta: i sa jastuka u sredini, gde leži pas, i sa stranica krevetića.</p></details>
+      <details><summary>Da li smem da operem i napunjeni deo kreveta?</summary><p>Naravno. Napunjeni deo je podeljen u više segmenata, kako bi svaki mogao da stane u veš mašinu. Napunjene delove pereš na 40 °C ili na programu na kom inače pereš jastuke.</p></details>
+      <details><summary>Kad mi stiže krevetić?</summary><p>Svaki krevetić pravimo po porudžbini. Rok za izradu je uglavnom dve nedelje od datuma kada naručiš. Ako je rok zbog nekog razloga drugačiji, to ćemo ti dodatno naglasiti.</p></details>
+      <details><summary>Šta ako veličina ne odgovara?</summary><p>Ako se posavetuješ sa nama pri kupovini, sigurno ćemo zajedno izabrati odgovarajuću veličinu. Ako ipak nešto ne bude kako si zamislila, imaš rok od 14 dana da vratiš krevetić ili ga zameniš za drugu veličinu. Ovo ne važi za proizvode rađene po meri.</p></details>
+      <details><summary>Da li pravite krevete po meri?</summary><p>Krevete pravimo u četiri veličine i dva modela i ne pravimo ih po meri. Dušeke pravimo po meri ako je potrebno: manja korekcija dimenzija je 500 RSD, veća 1.000 RSD.</p></details>
+      <details><summary>Kad kupim krevet, da li dobijam sve što mi je potrebno?</summary><p>Da. Bilo da kupiš krevet ili dušek, on dolazi kao celina. Dodatne navlake su nešto što možeš da dokupiš posebno, ukoliko ti je praktično da ih imaš više.</p></details>
+      <details><summary>Kako mogu da platim?</summary><p>Uplatom na naš račun na dan slanja pošiljke, ili pouzećem, kuriru prilikom isporuke. Fiskalni račun stiže uz paket, a kopiju možemo da pošaljemo i na e-mail. Ako plaćaš kao pravno lice, napomeni to pri poručivanju i poslaćemo fakturu na e-mail.</p></details>
+      <details><summary>Koliko košta poštarina?</summary><p>Cene su bez uračunate poštarine, a cena poštarine se razlikuje po kategorijama i načinu plaćanja. Za porudžbine preko 20.000 RSD uz plaćanje preko računa poštarina je gratis.</p></details>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="reserve">
+      <div><span class="eyebrow" style="color:#ffe1d8">Rezervacije</span><h2>Rezerviši termin za izradu.</h2><p>Broj porudžbina u mesecu je ograničen, a termini se popunjavaju. Izaberi model, veličinu i boje, a mi ćemo ti javiti datum.</p></div>
+      <a class="btn" href="sleepy-krevet.html">Izaberi svoj Sleepy →</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div><a class="logo" href="index.html"><img src="img/logo.jpg" alt=""><span class="sig">Sleepy pet</span></a>
+        <p style="margin-top:16px;font-size:14px;max-width:34ch">Sleepy nije samo običan krevetić za psa. Pravljeno po porudžbini, sa mnogo ljubavi, pažnje i iskustva.</p></div>
+      <div><h4>Prodavnica</h4><ul><li><a href="sleepy-krevet.html">Premium krevet</a></li><li><a href="sleepy-krevet.html">Basic krevet</a></li><li><a href="#kolekcija">Sleepy dušek</a></li><li><a href="#kolekcija">Dodaci</a></li></ul></div>
+      <div><h4>Pomoć</h4><ul><li><a href="#velicine">Tabela veličina</a></li><li><a href="#pitanja">Dostava i plaćanje</a></li><li><a href="#pitanja">Povraćaj i zamena</a></li><li><a href="#materijali">Materijali i nega</a></li></ul></div>
+      <div><h4>Kontakt</h4><ul><li><a href="https://www.instagram.com/sleepy.krevetizapse/" target="_blank" rel="noopener">Instagram @sleepy.krevetizapse</a></li><li><a href="https://www.instagram.com/sleepy.krevetizapse/" target="_blank" rel="noopener">Piši nam u DM 💌</a></li></ul></div>
+    </div>
+    <div class="legal"><span>© 2026 Sleepy pet. Sva prava zadržana.</span><span>Kreveti i dušeci za pse · Srbija</span></div>
+  </div>
+</footer>
+</body>
+</html>
