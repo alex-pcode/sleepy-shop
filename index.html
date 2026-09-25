@@ -202,6 +202,7 @@ footer .legal{border-top:1px solid rgba(255,255,255,.1);padding-top:22px;display
   .menu-btn{display:grid}
   .hero .wrap,.feature .wrap,.colours .wrap,.size-wrap,.pf,.reserve{grid-template-columns:1fr}
   .hero{padding-top:28px}
+  /* hero-first: image leads on mobile */ .hero-art{order:-1}
   .hero-art{max-width:440px;margin:0 auto;width:100%}
   .hero-art .note{left:12px}
   .hero-art .stamp{right:6px}
@@ -214,6 +215,9 @@ footer .legal{border-top:1px solid rgba(255,255,255,.1);padding-top:22px;display
   .reserve .btn{justify-self:start}
 }
 @media (max-width:560px){
+  summary{font-size:21px}
+  summary{display:block;position:relative;padding-right:30px}
+  summary::after{position:absolute;right:0;top:0}
   .wrap{padding:0 16px}
   .grid-products,.mat-grid,.nomore ul{grid-template-columns:1fr}
   .reviews{columns:1}
@@ -225,6 +229,8 @@ footer .legal{border-top:1px solid rgba(255,255,255,.1);padding-top:22px;display
   th,td{padding:11px 10px;font-size:13px}
   footer .cols{grid-template-columns:1fr}
 }
+.mobile-nav{display:none}
+@media (max-width:820px){.menu-btn{display:grid}header.site.menu-open .mobile-nav{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;padding:8px 24px 18px;border-bottom:1px solid var(--line);box-shadow:0 14px 24px -18px rgba(0,0,0,.35)}.mobile-nav a{padding:13px 0;font-size:17px;border-bottom:1px solid var(--line)}.mobile-nav a:last-child{border-bottom:0}}
 </style>
 </head>
 <body>
@@ -245,7 +251,7 @@ footer .legal{border-top:1px solid rgba(255,255,255,.1);padding-top:22px;display
     <div class="icons">
       <a class="icon-btn" href="#" aria-label="Pretraga"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></a>
       <a class="icon-btn" href="#" aria-label="Korpa"><svg viewBox="0 0 24 24"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="badge">0</span></a>
-      <button class="icon-btn menu-btn" aria-label="Meni"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      <button class="icon-btn menu-btn" aria-label="Meni" aria-expanded="false"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
     </div>
   </div>
 </header>
@@ -475,5 +481,14 @@ footer .legal{border-top:1px solid rgba(255,255,255,.1);padding-top:22px;display
     <div class="legal"><span>© 2026 Sleepy pet. Sva prava zadržana.</span><span>Kreveti i dušeci za pse · Srbija</span></div>
   </div>
 </footer>
+<script>
+/* mobile menu: collects the header's nav links into one dropdown */
+(function(){var h=document.querySelector('header.site'),b=h&&h.querySelector('.menu-btn');if(!b)return;
+var p=document.createElement('nav');p.className='mobile-nav';p.setAttribute('aria-label','Meni');
+h.querySelectorAll('nav.main a').forEach(function(a){var c=a.cloneNode(true);c.removeAttribute('class');p.appendChild(c)});
+p.style.background=getComputedStyle(document.body).backgroundColor;h.appendChild(p);
+b.addEventListener('click',function(){var o=h.classList.toggle('menu-open');b.setAttribute('aria-expanded',o)});
+p.addEventListener('click',function(e){if(e.target.closest('a')){h.classList.remove('menu-open');b.setAttribute('aria-expanded','false')}});})();
+</script>
 </body>
 </html>
